@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fruit and Vegetable Recognizer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="scene">
+        <div class="container">
+            <!-- Front Side -->
+            <div class="front">
+                <img src="./bot.png" width="auto" height="50%" alt="">
+                <h1>AI Fruit and Vegetable Recognizer</h1>
+                <div id="uploadForm">
+                    <label for="fileInput" class="file-label upload-button" >Select an Image</label>
+                    <input type="file" id="fileInput" name="file" accept="image/*" required hidden>
+                    <div id="btn" class="upload-button">Upload</div>
+                </div>
+            </div>
+            <!-- Back Side -->
+            <div class="back">
+                <h2>Prediction Result</h2>
+                <img id="uploadedImage" alt="Uploaded Preview" />
+                <div class="">
+                    <div id="prediction"></div>
+                    <div id="score"></div>
+                </div>
+                <div onclick="window.location.href='/'" class="upload-button">Test Again</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
