@@ -6,7 +6,7 @@ import os
 import numpy as np
 from fastapi.staticfiles import StaticFiles
 # Paths to datasets and image
-DATA_TRAIN_PATH = "Fruits_Vegetables\\train"
+DATA_TRAIN_PATH = os.path.join(current_dir,"Fruits_Vegetables","train")
 
 image_width = 180
 image_height = 180

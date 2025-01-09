@@ -5,13 +5,12 @@ from keras._tf_keras.keras import layers,losses
 from keras._tf_keras.keras.utils import image_dataset_from_directory, load_img, img_to_array
 from fastapi.middleware.cors import CORSMiddleware
 import os
-from PIL import Image
 
-
+current_dir = os.getcwd()
 # Paths to datasets and image
-DATA_TRAIN_PATH = "Fruits_Vegetables\\train"
-DATA_VALIDATION_PATH = "Fruits_Vegetables\\validation"
-DATA_TEST_PATH = "Fruits_Vegetables\\test"
+DATA_TRAIN_PATH = os.path.join(current_dir,"Fruits_Vegetables","train")
+DATA_VALIDATION_PATH = os.path.join(current_dir,"Fruits_Vegetables","validation")
+DATA_TEST_PATH = os.path.join(current_dir,"Fruits_Vegetables","test")
 epoch_size = 25
 
 image_width = 180
